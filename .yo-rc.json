@@ -1,0 +1,21 @@
+{
+  "generator-xh": {
+    "config": {
+      "projectName": "test-project",
+      "authorName": "Xfive",
+      "useBranding": true,
+      "reloader": "BrowserSync",
+      "devServer": true,
+      "cssPreprocessor": "scss",
+      "cssPrefix": "_",
+      "ignoreDist": true,
+      "isWP": false,
+      "extension": "html",
+      "features": {
+        "useJquery": true,
+        "useBootstrap": true,
+        "useBrowserify": true
+      }
+    }
+  }
+}
