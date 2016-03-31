@@ -5,8 +5,8 @@
 /* Container */
 .container {
   position: relative;
-  width: $container-width + 2 * $container-padding;
-  padding: 0 $container-padding;
+  max-width: $container-width + 2 * $container-padding;
+  padding: 0 $container-padding 10px;
   margin: 0 auto;
 }
 

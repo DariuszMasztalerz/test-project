@@ -1,3 +1,56 @@
 <aside class="sidebar">
-  <p>sidebar</p>
+  <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sidebar-element">
+          <h3>Follow us</h3>
+          <div class="sidebar-icons">
+              @@include('sidebar-icon.html', {
+                  "title" : "Facebook",
+                  "src" : "img/fb-icon.png"
+              })
+
+              @@include('sidebar-icon.html', {
+              "title" : "Twitter",
+              "src" : "img/twitter-icon.png"
+              })
+
+              @@include('sidebar-icon.html', {
+              "title" : "Google+",
+              "src" : "img/google-icon.png"
+              })
+          </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12 sidebar-element">
+        <h3>Randomly selected</h3>
+        <div class="sidebar-links">
+            @@include('sidebar-link.html', {
+                "description" : "X-Plosion is a hit in Japan"
+            })
+
+            @@include('sidebar-link.html', {
+                "description" : "3 new flavors added"
+            })
+
+            @@include('sidebar-link.html', {
+                "description" : "Check our new promo at Youtube"
+            })
+
+            @@include('sidebar-link.html', {
+                "description" : " We say NO to artificial flavours"
+            })
+
+            @@include('sidebar-link.html', {
+                "description" : "X-Plosion and your health"
+            })
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12 sidebar-element">
+        <h3>Where you can find us</h3>
+        <div class="sidebar-contants">
+          <p class="sidebar-info"><span>X-Plosion</span></p>
+          <p class="sidebar-info">9 Danbury Road</p>
+          <p class="sidebar-info">Wilton</p>
+          <p class="sidebar-info">CT 06897</p>
+        </div>
+      </div>
+  </div>
 </aside>

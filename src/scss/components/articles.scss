@@ -1,0 +1,61 @@
+.articles {
+  margin-top: 20px;
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(222,214,204,1);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(222,214,204,1);
+  box-shadow: 2px 2px 2px 0px rgba(222,214,204,1);
+}
+
+.articles-category {
+  &:first-child {
+    padding-right: 0;
+    background: url('../img/separator-dots-perpendicularly.png') right repeat-y;
+  }
+  &:last-child {
+    padding-left: 0;
+  }
+}
+
+.articles-title {
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+  padding: 22px 0 22px 20px;
+  background: #fb2e6d;
+  background: -moz-linear-gradient(top, #fb2e6d 0%, #e61052 100%);
+  background: -webkit-linear-gradient(top, #fb2e6d 0%,#e61052 100%);
+  background: linear-gradient(to bottom, #fb2e6d 0%,#e61052 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb2e6d', endColorstr='#e61052',GradientType=0 );
+}
+
+.articles-list {
+  margin-top: 30px;
+}
+
+.articles-separator {
+  height: 2px;
+  background-color: #e5e5e5;
+}
+
+.articles-list-item {
+  overflow: hidden;
+  padding: 0 0 20px 0;
+}
+
+@media screen and (min-width: $screen-xs) and (max-width: $screen-lg){
+  .articles-category {
+    &:last-child {
+      .articles-title {
+        padding-left: 40px;
+      }
+
+      .articles-list {
+        padding-left: 20px;
+      }
+    }
+  }
+}

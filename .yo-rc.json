@@ -16,6 +16,9 @@
         "useBootstrap": true,
         "useBrowserify": true
       }
-    }
+    },
+    "pages": [
+      "home"
+    ]
   }
 }
