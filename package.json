@@ -43,6 +43,8 @@
       "browserify-shim"
     ]
   },
-  "browserify-shim": {
+  "browserify-shim": {},
+  "dependencies": {
+    "jquery-colorbox": "^1.6.3"
   }
 }

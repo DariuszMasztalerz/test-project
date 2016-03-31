@@ -9,6 +9,6 @@
 'use strict';
 
 (function () {
-  require('./modules/exampleFn').init();
+  var darek = require('./modules/colorbox').init();
 })();
 

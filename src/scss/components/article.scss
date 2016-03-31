@@ -2,7 +2,7 @@
   font-size: 13px;
   font-weight: bold;
   color: #2a1f0f;
-  padding: 0px 0 20px 20px;
+  padding: 0px 0 20px 15px;
 }
 
 .article-container {
@@ -21,6 +21,7 @@
   color: #97866f;
   padding: 0;
   line-height: 20px;
+  padding-right: 15px;
 }
 
 .article-link {
@@ -59,10 +60,16 @@
       .articles-title {
         padding-left: 40px;
       }
-
-      .articles-list {
-        padding-left: 20px;
-      }
     }
+  }
+}
+
+@media screen and (min-width: 292px) and (max-width: 430px){
+  .article-description {
+    padding-left: 30px;
+  }
+
+  .article-link {
+    padding-left: 30px;
   }
 }
