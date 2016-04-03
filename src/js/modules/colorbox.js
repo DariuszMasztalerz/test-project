@@ -13,7 +13,7 @@ var colorbox = {
       changeImages();
     });
 
-    $( document ).ready(function() {
+    $(document).ready(function() {
       colorbox = $images.colorbox({
         rel: 'gal',
         width: '50%',

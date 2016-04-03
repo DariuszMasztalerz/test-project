@@ -13,23 +13,31 @@
 .articles-category {
   &:first-child {
     padding-right: 0;
-    background: url('../img/separator-dots-perpendicularly.png') right repeat-y;
+    background: url('../img/separator-dots-perpendicularly.png') right center repeat-y;
   }
   &:last-child {
     padding-left: 0;
   }
 }
 
-.articles-title {
-  font-size: 12px;
-  color: #fff;
-  font-weight: bold;
-  padding: 22px 0 22px 20px;
+.article-title-container {
   background: #fb2e6d;
   background: -moz-linear-gradient(top, #fb2e6d 0%, #e61052 100%);
   background: -webkit-linear-gradient(top, #fb2e6d 0%,#e61052 100%);
   background: linear-gradient(to bottom, #fb2e6d 0%,#e61052 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb2e6d', endColorstr='#e61052',GradientType=0 );
+}
+
+.articles-title {
+  background: url("../img/separator-header.png") right 0px repeat-y;
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+  padding: 22px 0 22px 20px;
+}
+
+.last {
+  background: none;
 }
 
 .articles-list {
