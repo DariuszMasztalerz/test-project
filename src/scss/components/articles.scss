@@ -55,14 +55,28 @@
   padding: 0 0 20px 0;
 }
 
-@media screen and (min-width: $screen-xs) and (max-width: $screen-lg){
+@media screen and (max-width: $screen-lg){
   .articles-category {
     &:last-child {
       .articles-title {
         padding-left: 40px;
       }
 
+      .articles-list-item {
+          padding-left: 20px;
+      }
+
       .articles-list {
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 250px) and (max-width: 430px){
+  .articles-category {
+    &:last-child {
+      .article-container-description {
         padding-left: 20px;
       }
     }

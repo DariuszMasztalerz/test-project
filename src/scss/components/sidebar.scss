@@ -51,6 +51,8 @@
   color: #97866f;
   font-size: 12px;
   margin-bottom: 20px;
+  text-indent: -25px;
+  margin-left:25px;
 
   &:before {
     display: inline-block;
@@ -88,6 +90,10 @@
   .sidebar-element {
     margin-left: 0px;
 
+    h3 {
+      padding: 25px;
+    }
+
     &:not(:first-child) {
       float:left;
       width: 49%;
@@ -99,4 +105,59 @@
       margin-right:0;
     }
   }
+}
+
+@media screen and (max-width: $screen-lg){
+  .sidebar-element {
+    margin-left: 0px;
+
+    h3 {
+      padding: 25px;
+    }
+
+    &:not(:first-child) {
+      float:left;
+      width: 49%;
+      margin-right:1px;
+    }
+
+    &:last-child {
+      float: right;
+      margin-right:0;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-lg) {
+  .sidebar-element {
+    h3 {
+      padding-left: 25px;
+    }
+
+    .sidebar-icons {
+      padding-left: 25px;
+    }
+
+    .sidebar-contants {
+      padding-left: 25px;
+    }
+
+    .sidebar-link {
+      padding: 5px;
+    }
+  }
+}
+
+@media screen and (min-width: 250px) and (max-width: 430px){
+  .sidebar-icons {
+    a {
+      clear: both;
+      margin-top: 10px;
+
+      &:first-child {
+        margin-top: 0px;
+      }
+    }
+  }
+
 }

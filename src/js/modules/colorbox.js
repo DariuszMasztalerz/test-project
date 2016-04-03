@@ -9,6 +9,11 @@ var colorbox = {
     var $images = $('a[data-colorbox]');
     var colorbox;
 
+    $(document).bind('cbox_closed', function() {
+      $.colorbox.close();
+      clearInterval(interval);
+    });
+
     $(document).bind('cbox_open', function() {
       changeImages();
     });
