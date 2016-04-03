@@ -8,6 +8,7 @@ var colorbox = {
   init: function () {
     var $images = $('a[data-colorbox]');
     var colorbox;
+    var interval;
 
     $(document).bind('cbox_open', function() {
       changeImages();
@@ -15,11 +16,10 @@ var colorbox = {
 
     $(document).bind('cbox_closed', function() {
       $.colorbox.close();
+      clearInterval(interval);
       $(document).unbind('cbox_open');
       $(document).unbind('cbox_closed');
     });
-
-
 
     $(document).ready(function() {
       colorbox = $images.colorbox({
@@ -29,12 +29,17 @@ var colorbox = {
         open: true
       });
 
-
+      $('#cboxClose').click(function() {
+        $.colorbox.close();
+        clearInterval(interval);
+        $(document).unbind('cbox_open');
+        $(document).unbind('cbox_closed');
+      });
     });
 
     function changeImages() {
       var count = 0;
-      var interval = setInterval(function() {
+      interval = setInterval(function() {
         $.colorbox.next();
         count += 1;
 
