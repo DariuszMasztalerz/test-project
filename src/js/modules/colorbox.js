@@ -9,14 +9,17 @@ var colorbox = {
     var $images = $('a[data-colorbox]');
     var colorbox;
 
-    $(document).bind('cbox_closed', function() {
-      $.colorbox.close();
-      clearInterval(interval);
-    });
-
     $(document).bind('cbox_open', function() {
       changeImages();
     });
+
+    $(document).bind('cbox_closed', function() {
+      $.colorbox.close();
+      $(document).unbind('cbox_open');
+      $(document).unbind('cbox_closed');
+    });
+
+
 
     $(document).ready(function() {
       colorbox = $images.colorbox({
@@ -25,6 +28,8 @@ var colorbox = {
         height: '50%',
         open: true
       });
+
+
     });
 
     function changeImages() {
